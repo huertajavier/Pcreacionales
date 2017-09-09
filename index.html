@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="icon" href="images/favicon.ico">
+	
+	<title>Inicio</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+	<div class="container-fluid" id="wrapper">
+		<div class="row">
+			<nav class="sidebar col-xs-12 col-sm-4 col-lg-3 col-xl-2 bg-faded sidebar-style-1">
+				<h1 class="site-title"><a href="index.html"><em class="fa fa-rocket"></em> Huerta Cuevas Javier</a></h1>
+				
+				<a href="#menu-toggle" class="btn btn-default" id="menu-toggle"><em class="fa fa-bars"></em></a>
+				
+				<ul class="nav nav-pills flex-column sidebar-nav">
+					<li class="nav-item"><a class="nav-link active" href="index.html"><em class="fa fa-dashboard"></em> Patrones de Diseno <span class="sr-only">(current)</span></a></li>
+					<li class="nav-item"><a class="nav-link" href="abs.html"><em class="fa fa-cog"></em> Abstrac Factory</a></li>
+					<li class="nav-item"><a class="nav-link" href="builder.html"><em class="fa fa-cog"></em> Builder</a></li>
+					<li class="nav-item"><a class="nav-link" href="factory.html"><em class="fa fa-cog"></em>Factory Method</a></li>
+					<li class="nav-item"><a class="nav-link" href="prototype.html"><em class="fa fa-cog"></em> Prototype</a></li>
+					<li class="nav-item"><a class="nav-link" href="singleton.html"><em class="fa fa-cog"></em> Singleton</a></li>
+				</ul>
+				
+				<a href="#" class="logout-button"><em class="fa fa-power-off"></em> Signout</a></nav>
+			
+			<main class="col-xs-12 col-sm-8 offset-sm-4 col-lg-9 offset-lg-3 col-xl-10 offset-xl-2 pt-3 pl-4">
+				<header class="page-header row justify-center">
+					<div class="col-md-6 col-lg-8" >
+						<h1 class="float-left text-center text-md-left">Dashboard</h1>
+					</div>
+					
+					<div class="dropdown user-dropdown col-md-6 col-lg-4 text-center text-md-right"><a class="btn btn-stripped dropdown-toggle" href="https://example.com" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<img src="images/profile-pic.jpg" alt="profile photo" class="circle float-left profile-photo" width="50" height="auto">
+						
+						<div class="username mt-1">
+							<h4 class="mb-1">Username</h4>
+							
+							<h6 class="text-muted">Super Admin</h6>
+						</div>
+						</a>
+						
+						<div class="dropdown-menu dropdown-menu-right" style="margin-right: 1.5rem;" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#"><em class="fa fa-user-circle mr-1"></em> View Profile</a>
+						     <a class="dropdown-item" href="#"><em class="fa fa-sliders mr-1"></em> Preferences</a>
+						     <a class="dropdown-item" href="#"><em class="fa fa-power-off mr-1"></em> Logout</a></div>
+					</div>
+					
+					<div class="clear"></div>
+				</header>
+				
+				<section class="row">
+					<div class="col-sm-12">
+						<section class="row">
+							<div class="col-md-12 col-lg-12">
+								<div class="jumbotron">
+									<h1 class="mb-4">¿Qué es un Patrón de Diseño?</h1>
+									
+									<p class="lead">Un patrón de diseño es un conjunto de objetos y clases organizados de cierta forma que ayudan a resolver un problema recurrente en el diseño de un software de una forma limpia y reusable. Según el libro Design Patterns: Elements of Reusable Object-Oriented Software, a los patrones se los puede clasificar en tres categorías:</p>
+									
+									<ul class="lead">
+									    <li >
+									        Patrones Creacionales:
+									        <p>Procuran independizar al sistema de como sus objetos son creados y/o representados.</p>
+									    </li>
+									    <li>
+									        Patrones Estructurales:
+									        <p>
+									             Se refieren a como las clases y los objetos son organizados para conformar estructuras más complejas.
+									        </p>
+									    </li>
+									    <li>
+									        Patrones de Comportamiento: 
+									        <p>
+									             Se refieren a como las clases y los objetos son organizados para conformar estructuras más complejas.
+									        </p>
+									     </li>
+									</ul>
+									
+									<div class="jumbotron">
+									    <h2>Patrones Creacionales</h2>
+									    <p>Estos patrones buscan en cierta forma "despreocupar" al sistema de como sus objetos son creados o compuestos.</p>	
+									    
+								        <ul>
+								            <li>
+								                Abstract Factory
+								                <p>
+								                   Permite trabajar con objetos de diferentes familias de manera que no se mezclen entre sí. De esa manera se consigue la el tipo de familia que se esté utilizando sea transparente. 
+								                </p>
+								            </li>
+								            <li>
+								                Builder
+								                <p>
+								                  Abstrae el proceso de creación de los objetos complejos, centralizandolo en pun punto.  
+								                </p>
+								            </li>
+								            <li>
+								                Factory Method
+								                <p>
+								                   Centraliza en una clase constructora la creación de objetos de un tipo determinado. Ocultando al invocante la necesidad de indicar un tipo u otro. 
+								                </p>
+								            </li>
+								            <li>
+								                Prototype
+								                <p>
+								                    Crea un objeto a partir de la clonación de un objeto ya existente
+								                </p>
+								            </li>
+								            <li>
+								                Singleton
+								                <p>
+								                    Garantiza que solo exista una instancia de un objeto y que la forma de acceder a dicha instancia sea general
+								                </p>
+								            </li>
+								        </ul>						    
+									</div>
+
+								  </div>
+								
+								</div>
+						</section>
+
+					</div>
+				</section>
+			</main>
+		</div>
+	</div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    
+    <script src="js/chart.min.js"></script>
+    <script src="js/chart-data.js"></script>
+    <script src="js/easypiechart.js"></script>
+    <script src="js/easypiechart-data.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+	    window.onload = function () {
+	var chart1 = document.getElementById("line-chart").getContext("2d");
+	window.myLine = new Chart(chart1).Line(lineChartData, {
+	responsive: true,
+	scaleLineColor: "rgba(0,0,0,.2)",
+	scaleGridLineColor: "rgba(0,0,0,.05)",
+	scaleFontColor: "#c5c7cc"
+	});
+};
+	</script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    
+	  </body>
+</html>

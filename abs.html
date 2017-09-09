@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<meta name="description" content="">
+	
+	<meta name="author" content="">
+	
+	<link rel="icon" href="images/favicon.ico">
+	
+	<title>Medialoot Bootstrap 4 Dashboard Template</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+	<div class="container-fluid" id="wrapper">
+		<div class="row">
+			<nav class="sidebar col-xs-12 col-sm-4 col-lg-3 col-xl-2 bg-faded sidebar-style-1">
+				<h1 class="site-title"><a href="index.html"><em class="fa fa-rocket"></em> Huerta Cuevas Javier</a></h1>
+				
+				<a href="#menu-toggle" class="btn btn-default" id="menu-toggle"><em class="fa fa-bars"></em></a>
+				
+				<ul class="nav nav-pills flex-column sidebar-nav">
+					<li class="nav-item"><a class="nav-link active" href="index.html"><em class="fa fa-dashboard"></em> Patrones de Diseno <span class="sr-only">(current)</span></a></li>
+					<li class="nav-item"><a class="nav-link" href="abs.html"><em class="fa fa-cog"></em> Abstrac Factory</a></li>
+
+				</ul>
+				
+				<a href="#" class="logout-button"><em class="fa fa-power-off"></em> Signout</a></nav>
+			
+			<main class="col-xs-12 col-sm-8 offset-sm-4 col-lg-9 offset-lg-3 col-xl-10 offset-xl-2 pt-3 pl-4">
+				<header class="page-header row justify-center">
+					<div class="col-md-6 col-lg-8" >
+						<h1 class="float-left text-center text-md-left">Dashboard</h1>
+					</div>
+					
+					<div class="dropdown user-dropdown col-md-6 col-lg-4 text-center text-md-right"><a class="btn btn-stripped dropdown-toggle" href="https://example.com" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<img src="images/profile-pic.jpg" alt="profile photo" class="circle float-left profile-photo" width="50" height="auto">
+						
+						<div class="username mt-1">
+							<h4 class="mb-1">Username</h4>
+							
+							<h6 class="text-muted">Super Admin</h6>
+						</div>
+						</a>
+						
+						<div class="dropdown-menu dropdown-menu-right" style="margin-right: 1.5rem;" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#"><em class="fa fa-user-circle mr-1"></em> View Profile</a>
+						     <a class="dropdown-item" href="#"><em class="fa fa-sliders mr-1"></em> Preferences</a>
+						     <a class="dropdown-item" href="#"><em class="fa fa-power-off mr-1"></em> Logout</a></div>
+					</div>
+					
+					<div class="clear"></div>
+				</header>
+				
+				<section class="row">
+					<div class="col-sm-12">
+						<section class="row">
+							<div class="col-md-12 col-lg-12">
+								<div class="jumbotron">
+									<h1 class="mb-4">Abstract Factory</h1>
+									
+									<p class="lead">El patrón Abstract Factory nos permite crear, mediante una interfaz, conjuntos o familias de objetos (denominados productos) que dependen mutuamuente y todo esto sin especificar cual es el objeto concreto.</p>
+									
+									<h2>¿Que usos tiene el patrón Abstract Factory?</h2>
+									<p>Este patrón se puede aplicar cuando:</p>
+									<ul class="lead">
+									   <li>Un sistema debe ser independiente de como sus objetos son creados.</li>
+									   <li>Un sistema debe ser 'configurado' con una cierta familia de productos.</li>
+									   <li>Se necesita reforzar la noción de dependencia mutua entre ciertos objetos.</li>
+									</ul>
+									
+									<div class="jumbotron">
+									    <h2>Estructura del Patrón Abstract Factory</h2>
+									    <img src="http://lineadecodigo.com/wp-content/uploads/2013/01/AbstractFactory.png" alt="">
+									    <p>El asterisco (*) representa que la clase/operación es abstracta.<				    
+									</div>
+
+								  </div>
+								  
+								  <h2>Elementos del Patrón Abstract Factory</h2>
+								  <div class="jumbotron">
+								      
+								      <ul>
+								          <li>
+								              FabricaAbstracta*:
+								              <p>
+								                  Define un conjunto de métodos (interfaz) para la creación de productos abstractos.
+								              </p>
+								          </li>
+								          <li>
+								              FabricaConcreta1/2:
+								              <p>
+								                 Implementa la interfaz de la FabricaAbstracta para la creación de los distintos productos concretos. 
+								              </p>
+								          </li>
+								          <li>
+								              ProductoAbstractoA*/B*:
+								              <p>
+								                  Define la interfaz de los objetos de tipo ProductoA/B.
+								              </p>
+								          </li>
+								          <li>
+								              ProductoConcretoA1/A2/B1/B2:
+								              <p>
+								                  Implementan su respectiva interfaz representando un producto concreto.
+								              </p>
+								          </li>
+								      </ul>
+								  </div>
+								
+								
+								<h2>Pros/Contras del Patrón Abstract Factory</h2>
+								<div class="jumbotron">
+                                    <ul>
+                                        <li>+ Brinda flexibilidad al aislar a las clases concretas.</li>
+                                        <li> + Facilita cambiar las familias de productos.</li>
+                                        <li> - Para agregar nuevos productos se deben modificar tanto las fabricas abstractas como las concretas.</li>
+                                    </ul>
+								</div>
+								<h2>Ejemplo del Patrón Abstract Factory</h2>
+								<div class="jumbotron">
+                                    <p>
+                                        Teniendo en cuenta la siguiente jerarquía de clases, la cual trata de representar muy por arriba dos familias de productos (DVD y BluRay) cada uno con un par de variantes (simple y doble capa) para que permiten mostrar diferentes aspectos a tener en cuenta a la hora de usar este patrón.
+                                    </p>
+								    <img src="http://lineadecodigo.com/wp-content/uploads/2013/01/discos.png" alt="">
+								    <br>
+								    <br>
+								    <h3>En Codigo</h3>
+								    <br>
+								    <pre>
+    public abstract class Disco implements Prototipo {
+        @Override
+        public abstract Prototipo clone();
+     
+        public abstract String getCapacidad();
+     
+        public abstract String getNombre();
+     
+        public abstract String getPrecio();
+     
+        @Override
+        public String toString() {
+                return getNombre() + " (" + getCapacidad() + ")";
+        }
+    }
+								    </pre>
+								    <p>
+								        El producto DVD extendemos del Disco
+								    </p>
+								    <pre>
+public abstract class DVD extends Disco {
+    ...
+    }
+								    </pre>
+								    <p>Y el producto concreto del DVD extenderá de la anterior clase:</p>
+								    <pre>
+public class DVD_CapaSimple extends DVD {
+     
+        @Override
+        public Prototipo clone() {
+                return new DVD_CapaSimple();
+        }
+     
+        @Override
+        public String getCapacidad() {
+                return "4.7GB";
+        }
+     
+        @Override
+        public String getNombre() {
+                return "DVD Capa Simple";
+        }
+     
+        @Override
+        public String getPrecio() {
+                return "5.00$";
+        }
+     
+    }
+								    </pre>
+								    <p>Construiremos un AbstractFactory que nos permita crear discos de DVD o BluRay de simple y doble capa usando el siguiente diseño:</p>
+								    <img src="http://lineadecodigo.com/wp-content/uploads/2013/01/FabricaDiscos.png" alt="">
+								    <p>La factoría abstracta la definiríamos mediante un interface:</p>
+								    <pre>
+public interface FabricaDiscos {
+     
+            public BluRay crearBluRay();
+            public DVD crearDVD();
+    }
+								    </pre>
+								    <p>Y sobre ese interface implementamos una de las fábricas concretas, en este caso la de FabricaDiscos_CapaSimple:</p>
+								    <pre>
+public class FabricaDiscos_CapaSimple implements FabricaDiscos {
+     
+           @Override
+           public BluRay crearBluRay() {
+                   return new BluRay_CapaSimple();
+           }
+     
+           @Override
+           public DVD crearDVD() {
+                   return new DVD_CapaSimple();
+           }
+     
+    }
+								    </pre>
+								    <p>Veamos como quedaría el código fuente en Java para utilizar el patrón Abstract Factory:</p>
+								    <pre>
+FabricaDiscos fabrica;
+    DVD dvd;
+    BluRay bluray;
+     
+    fabrica = new FabricaDiscos_CapaSimple();
+    dvd = fabrica.crearDVD();
+    bluray = fabrica.crearBluRay();
+     
+    System.out.println(dvd);
+    System.out.println(bluray);
+     
+    fabrica = new FabricaDiscos_CapaDoble();
+    dvd = fabrica.crearDVD();
+    bluray = fabrica.crearBluRay();
+     
+    System.out.println(dvd);
+    System.out.println(bluray);
+								    </pre>
+								    <p>En el código vemos que sobre la fábrica podemos crear objetos de diferentes tipos y que podríamos ir creciendo en productos atendiendo a nuestras necesidades.</p>
+								    <pre>
+    fabrica = new FabricaDiscos_CapaSimple();
+    dvd = fabrica.crearDVD();
+    bluray = fabrica.crearBluRay();
+								    </pre>
+    
+
+								</div>
+								
+								</div>
+						</section>
+
+					</div>
+				</section>
+			</main>
+		</div>
+	</div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    
+    <script src="js/chart.min.js"></script>
+    <script src="js/chart-data.js"></script>
+    <script src="js/easypiechart.js"></script>
+    <script src="js/easypiechart-data.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+	    window.onload = function () {
+	var chart1 = document.getElementById("line-chart").getContext("2d");
+	window.myLine = new Chart(chart1).Line(lineChartData, {
+	responsive: true,
+	scaleLineColor: "rgba(0,0,0,.2)",
+	scaleGridLineColor: "rgba(0,0,0,.05)",
+	scaleFontColor: "#c5c7cc"
+	});
+};
+	</script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    
+	  </body>
+</html>
